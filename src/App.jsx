@@ -1,5 +1,6 @@
 
 import './App.css'
+import ToDo from './ToDo'
 
 function App() {
   
@@ -9,6 +10,9 @@ function App() {
       <h1>Hello React</h1>
       <br />
       <Developer name='Abu Hurayra Khan' passion='Student' level='Hons 3rd' goal='To be a Full-stack Developer'></Developer>
+      <br />
+      <ToDo hungry={true} name='Hurayra'></ToDo>
+      <ToDo hungry={false} name='Miskat'></ToDo>
     </>
   )
 }
