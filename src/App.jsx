@@ -6,15 +6,29 @@ import Stars from './stars'
 
 function App() {
   
-  const brothers = ['Hurayra', 'Miskat', 'Raihan', 'Sajib'];
-  const stars = [
-    {id: 1, name: 'Hurayra khan', education:'Hons 3rd', goal: 'Web Developer'},
-    {id: 2, name: 'Miskat khan', education:'Hons 3rd', goal: 'Go abroad'},
-    {id: 3, name: 'Raihan khan', education:'class 5', goal: 'Electrical Engineer'},
-    {id: 4, name: 'Sajib khan', education:'3rd semester', goal: 'Technical engineer'}
-  ]
+  // const brothers = ['Hurayra', 'Miskat', 'Raihan', 'Sajib'];
+  // const stars = [
+  //   {id: 1, name: 'Hurayra khan', education:'Hons 3rd', goal: 'Web Developer'},
+  //   {id: 2, name: 'Miskat khan', education:'Hons 3rd', goal: 'Go abroad'},
+  //   {id: 3, name: 'Raihan khan', education:'class 5', goal: 'Electrical Engineer'},
+  //   {id: 4, name: 'Sajib khan', education:'3rd semester', goal: 'Technical engineer'}
+  // ]
+
+  function handleClick(){
+    alert('I am clicked')
+  }
+  function button3 (num){
+    const newNumber = num + 5;
+    alert(newNumber);
+  }
   return (
     <>
+
+    <button onClick={handleClick}>Click me</button>
+    <button onClick={() => alert('clicked btn 2')}>Click me</button>
+    <button onClick={() => button3(5)}>click me 3</button>
+    
+
       {/* <h1>Hello React</h1>
       <br />
       <Developer name='Abu Hurayra Khan' passion='Student' level='Hons 3rd' goal='To be a Full-stack Developer'></Developer>
@@ -26,9 +40,9 @@ function App() {
         brothers.map(brother => <Bro  name={brother}></Bro>)
       } */}
 
-      {
+      {/* {
         stars.map(star => <Stars key={star.id} name={star.name} education={star.education} goal={star.goal}></Stars>)
-      }
+      } */}
     </>
   )
 }
