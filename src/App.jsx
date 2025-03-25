@@ -1,18 +1,34 @@
 
 import './App.css'
-import ToDo from './ToDo'
+import ToDo from './ToDo';
+import Bro from './brothers';
+import Stars from './stars'
 
 function App() {
   
-
+  const brothers = ['Hurayra', 'Miskat', 'Raihan', 'Sajib'];
+  const stars = [
+    {id: 1, name: 'Hurayra khan', education:'Hons 3rd', goal: 'Web Developer'},
+    {id: 2, name: 'Miskat khan', education:'Hons 3rd', goal: 'Go abroad'},
+    {id: 3, name: 'Raihan khan', education:'class 5', goal: 'Electrical Engineer'},
+    {id: 4, name: 'Sajib khan', education:'3rd semester', goal: 'Technical engineer'}
+  ]
   return (
     <>
-      <h1>Hello React</h1>
+      {/* <h1>Hello React</h1>
       <br />
       <Developer name='Abu Hurayra Khan' passion='Student' level='Hons 3rd' goal='To be a Full-stack Developer'></Developer>
       <br />
       <ToDo hungry={true} name='Hurayra'></ToDo>
-      <ToDo hungry={false} name='Miskat'></ToDo>
+      <ToDo hungry={false} name='Miskat'></ToDo> */}
+
+      {/* {
+        brothers.map(brother => <Bro  name={brother}></Bro>)
+      } */}
+
+      {
+        stars.map(star => <Stars key={star.id} name={star.name} education={star.education} goal={star.goal}></Stars>)
+      }
     </>
   )
 }
