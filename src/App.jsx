@@ -2,6 +2,7 @@
 import './App.css'
 import ToDo from './ToDo';
 import Bro from './brothers';
+import Counter from './counter';
 import Stars from './stars'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
   }
   return (
     <>
+    <Counter></Counter>
 
     <button onClick={handleClick}>Click me</button>
     <button onClick={() => alert('clicked btn 2')}>Click me</button>
