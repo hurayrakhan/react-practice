@@ -7,34 +7,41 @@ export default function RunsCount () {
     const dotballHandler = ()=> {
         const newRuns = runs + 0;
         setRuns(newRuns);
+        const balls = over + 1;
+        setOver(balls);
     }
     const singleHandler = ()=> {
         const newRuns = runs + 1;
         setRuns(newRuns);
+        const balls = over + 1;
+        setOver(balls);
     }
     
     const twoHandler = ()=> {
         const newRuns = runs + 2;
         setRuns(newRuns);
+        const balls = over + 1;
+        setOver(balls);
     }
     const threeHandler = ()=> {
         const newRuns = runs + 3;
         setRuns(newRuns);
+        const balls = over + 1;
+        setOver(balls);
     }
     const fourHandler = ()=> {
         const newRuns = runs + 4;
         setRuns(newRuns);
+        const balls = over + 1;
+        setOver(balls);
     }
     const sixHandler = ()=> {
         const newRuns = runs + 6;
         setRuns(newRuns);
-    }
-
-    
-    const overHandler = ()=> {
         const balls = over + 1;
         setOver(balls);
     }
+
     
     return(
         <div>
@@ -43,10 +50,7 @@ export default function RunsCount () {
                 <h3>Over/Ball: {over}</h3>
 
             </div>
-            <button onClick={()=>{
-                dotballHandler()
-                overHandler()
-            }}>Dot Ball</button>
+            <button onClick={dotballHandler}>Dot Ball</button>
 
             <button onClick={singleHandler}>Single</button>
 
