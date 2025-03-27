@@ -3,6 +3,7 @@ import './App.css'
 import ToDo from './ToDo';
 import Bro from './brothers';
 import Counter from './counter';
+import RunsCount from './runScore'
 import Stars from './stars'
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
   }
   return (
     <>
+    <RunsCount></RunsCount>
+
+
     <Counter></Counter>
 
     <button onClick={handleClick}>Click me</button>
