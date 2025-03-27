@@ -16,23 +16,23 @@ function App() {
   //   {id: 4, name: 'Sajib khan', education:'3rd semester', goal: 'Technical engineer'}
   // ]
 
-  function handleClick(){
-    alert('I am clicked')
-  }
-  function button3 (num){
-    const newNumber = num + 5;
-    alert(newNumber);
-  }
+  // function handleClick(){
+  //   alert('I am clicked')
+  // }
+  // function button3 (num){
+  //   const newNumber = num + 5;
+  //   alert(newNumber);
+  // }
   return (
     <>
     <RunsCount></RunsCount>
 
 
-    <Counter></Counter>
+    {/* <Counter></Counter>
 
     <button onClick={handleClick}>Click me</button>
     <button onClick={() => alert('clicked btn 2')}>Click me</button>
-    <button onClick={() => button3(5)}>click me 3</button>
+    <button onClick={() => button3(5)}>click me 3</button> */}
     
 
       {/* <h1>Hello React</h1>
@@ -54,15 +54,15 @@ function App() {
 }
 
 
-function Developer (props) {
-  return(
-    <div style={{borderRadius:'20px',border:'2px solid skyblue'}}>
-      <h3>Name: {props.name}</h3>
-      <p>Passion: {props.passion}</p>
-      <p>Education level: {props.level}</p>
-      <p>Goal: {props.goal}</p>
-    </div>
-  )
-}
+// function Developer (props) {
+//   return(
+//     <div style={{borderRadius:'20px',border:'2px solid skyblue'}}>
+//       <h3>Name: {props.name}</h3>
+//       <p>Passion: {props.passion}</p>
+//       <p>Education level: {props.level}</p>
+//       <p>Goal: {props.goal}</p>
+//     </div>
+//   )
+// }
 
 export default App

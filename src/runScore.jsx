@@ -62,7 +62,7 @@ export default function RunsCount () {
     
     return(
         <div>
-            <div style={{padding:'20px', border:'2px solid green', borderRadius: '10px'}}>
+            <div style={{padding:'20px', border:'2px solid green', borderRadius: '10px', marginBottom:'20px'}}>
                 <h2>Total Score: {runs} </h2>
                 <h3>Over/Ball: {overHandler(balls)} / {ballsHandler(balls)}</h3>
 
