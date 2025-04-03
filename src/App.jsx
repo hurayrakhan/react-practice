@@ -1,4 +1,5 @@
 
+import { Suspense } from 'react';
 import './App.css'
 import ToDo from './ToDo';
 import Bro from './brothers';
@@ -25,7 +26,9 @@ function App() {
   // }
   return (
     <>
+    <Suspense fallback={<h3>Loading...</h3>}>
     <RunsCount></RunsCount>
+    </Suspense>
 
 
     {/* <Counter></Counter>
