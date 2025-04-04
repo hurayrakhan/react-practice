@@ -1,12 +1,12 @@
 import { use } from "react"
 import User from "./person";
 
-export default function Users ({users}) {
-    const user = use(users);
+export default function Users ({fetchUser}) {
+    const user = use(fetchUser);
     
     return(
         <div className="card">
-            <h3>Users</h3>
+            <h3>Users: {user.length}</h3>
         </div>
 
     )
