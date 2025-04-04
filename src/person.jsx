@@ -1,8 +1,9 @@
-export default function User (person)  {
+export default function User ({person})  {
     
     return(
-        <div>
+        <div className="card">
             <h4>Name: {person.name}</h4>
+            <p>Email: {person.email}</p>
         </div>
     )
 }

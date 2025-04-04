@@ -7,8 +7,13 @@ export default function Users ({fetchUser}) {
     return(
         <div className="card">
             <h3>Users: {user.length}</h3>
+
+            {
+            user.map(person => <User key={person.id} person={person}></User>)
+            }
         </div>
 
+        
     )
 }
 
