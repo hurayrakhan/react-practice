@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+// import Friend from "./friends";
 
 export default function Friends() {
 
@@ -14,19 +15,20 @@ export default function Friends() {
         <div className="card">
             <h3>cards: {friends.length}</h3>
             {
-            friends.map(friend => <Friend friend={friend}></Friend> )
+            friends.map(friend => <Friend key={friend.id} friend={friend}></Friend> )
         }
         </div>
         
     )
 }
 
-function Friend (friend) { 
-    const [name, email] = friend
+function Friend ({friend}) { 
+
     return(
         <div className="card">
-            <h4>Name: {name}</h4>
-            <p>Email: {email}</p>
+            <h4>Name: {friend.name}</h4>
+            <p>Email: {friend.email}</p>
         </div>
     )
 }
+
