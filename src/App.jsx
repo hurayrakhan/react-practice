@@ -7,6 +7,7 @@ import Counter from './counter';
 import RunsCount from './runScore'
 import Stars from './stars'
 import Users from './api';
+import Friends from './useEsffect';
 
   const users = fetch("https://jsonplaceholder.typicode.com/users")
     .then(res => res.json())
@@ -16,9 +17,11 @@ import Users from './api';
     
     <>
 
-    <Suspense fallback={<p>Loading...</p>}>
+    <Friends></Friends>
+
+    {/* <Suspense fallback={<p>Loading...</p>}>
       <Users fetchUser={users}></Users>
-    </Suspense>
+    </Suspense> */}
     
     {/* <Suspense fallback={<h3>Loading...</h3>}>
     <RunsCount></RunsCount>
