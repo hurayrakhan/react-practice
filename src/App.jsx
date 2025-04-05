@@ -8,16 +8,19 @@ import RunsCount from './runScore'
 import Stars from './stars'
 import Users from './api';
 import Friends from './useEsffect';
+import Countries from './Components/countries';
 
-  const users = fetch("https://jsonplaceholder.typicode.com/users")
-    .then(res => res.json())
+  const countriesPromise = fetch("https://restcountries.com/v3.1/all")
+    .then(res => res.json());
 
   function App() {
   return (
     
     <>
-
-    <Friends></Friends>
+    <Suspense fallback={<p>Loading...</p>}>
+      <Countries countriesPromise={countriesPromise}></Countries>
+    </Suspense>
+    {/* <Friends></Friends> */}
 
     {/* <Suspense fallback={<p>Loading...</p>}>
       <Users fetchUser={users}></Users>
