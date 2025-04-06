@@ -10,8 +10,12 @@ import Users from './api';
 import Friends from './useEsffect';
 import Countries from './Components/countries';
 
-  const countriesPromise = fetch("https://restcountries.com/v3.1/all")
-    .then(res => res.json());
+
+  const countriesPromise = fetch('https://restcountries.com/v3.1/all')
+    .then(res => res.json())
+  
+  
+
 
   function App() {
   return (
@@ -20,6 +24,8 @@ import Countries from './Components/countries';
     <Suspense fallback={<p>Loading...</p>}>
       <Countries countriesPromise={countriesPromise}></Countries>
     </Suspense>
+
+    
     {/* <Friends></Friends> */}
 
     {/* <Suspense fallback={<p>Loading...</p>}>
