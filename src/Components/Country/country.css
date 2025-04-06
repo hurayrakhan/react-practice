@@ -2,5 +2,8 @@
     border: 2px solid aqua;
     padding: 10px;
     border-radius: 12px;
-
+    
+}
+.visited{
+    background-color: darkorchid;
 }
